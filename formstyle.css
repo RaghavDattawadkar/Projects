@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Diploma Form */
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/backgroundimage.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+/* Used for center box */
+.form-box{
+    width: 380px;
+    height: 480px;
+    position:relative;
+    margin: 6% auto;
+    background:white;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.Heading{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+   
+}
+
+.Heading h2{
+    text-align: center;
+    margin-right: 5%;
+    padding: 2px;
+    font-size: 24px;
+    text-decoration: underline rgb(0, 17, 255);
+}
+
+.input-group{
+    top: 100px;
+    position: absolute;
+    width: 280px;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+   margin-top: 10%;
+   margin-left: 20%;
+   background-color: white;
+    color: red;
+    border-radius: 30px;
+    text-align: center;
+    transition: 1s;
+}
+
+.submit-btn:hover{
+    color: white;
+   background-color: red;
+}
+
+.back-btn {
+    width: 15%;
+    padding: 5px 30px;
+    cursor: pointer;
+    display: flex; /* Changed from block to flex */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-top: 10%;
+    margin-left: 5%;
+    background-color: white;
+    color: red;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+}
+
+.back-btn:hover{
+    color: white;
+   background-color: red;
+}

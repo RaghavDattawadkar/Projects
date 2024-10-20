@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates and Programs</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logopage.jpg">
+
+    <script>
+
+        function savecomment()
+        {
+            // Object Creation
+            var Name=document.getElementById("name");
+            var Email=document.getElementById("email");
+            var Comment=document.getElementById("comment");
+
+            // Reset Design
+
+
+            // Form Validation Conditions
+            if(Name.value.trim()=="")
+            {
+                Name.style.backgroundcolor="red";
+                Name.focus();
+                return;
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="navlink" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <!-- Use for close icon -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="Programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <!-- Use for open icon -->
+        </nav>
+        <h1>Our Cerificates & Online Programs 2024</h1>
+    </section>
+
+    <!-- Certificates and Programs -->
+
+    <section class="programs">
+        <div class="row">
+                <div class="left">
+                    <img src="images/certificate.jpg" alt="">
+                     <h2>Our Cerificates & Online Programs 2024</h2>
+                     <p>
+                        
+                     </p>
+                        <br>
+                        <p>In addition to our certificate programs, we offer comprehensive online degree programs that delve deeper
+                            into advanced topics, preparing you for high-level careers in the tech industry. Our degree programs in
+                            software engineering, cybersecurity, and data analytics provide a thorough understanding of theoretical
+                            concepts as well as practical skills. By enrolling in our online programs, you have the flexibility to
+                            study at your own pace, without sacrificing the quality of education. Our virtual classrooms are
+                            equipped with interactive tools and resources, enabling you to engage with faculty and peers,
+                            participate in discussions, and gain hands-on experience through real-world projects.</p>
+                        <br>
+                        <p>For those seeking to push the boundaries of technology, our post-graduation programs focus on the latest
+                            innovations and emerging fields. Specialize in areas such as artificial intelligence, machine learning,
+                            or blockchain technology, and become a leader in the next wave of technological advancements. Our
+                            post-graduation courses are designed for professionals who wish to deepen their expertise and stay ahead
+                            of industry trends. Join our 2024 online programs and embark on a journey of lifelong learning, equipped
+                            with the skills and knowledge to transform the future of technology.</p>
+                    
+
+                        <div class="comment-box">
+                            <h3>Leave a comment</h3>
+                           
+                            <form action="" class="comment-form">
+                                <input type="text" placeholder="Enter Name" id="name" class="form-control">
+                                <input type="email" placeholder="Enter Email" id="email">
+                                <textarea rows="5" placeholder="Your Comment" id="comment"></textarea>
+                                <button class="btn">Post Comment</button>
+                            </form>
+                        </div>
+                </div>
+           
+        <div class="right">
+            <h3>Our Placements</h3>
+                <div>
+                    <span>Computer Science</span>
+                    <span>51</span>
+                </div>
+                <div>
+                    <span>Data Analytics</span>
+                    <span>44</span>
+                </div>
+                <div>
+                    <span>Machine Learning</span>
+                    <span>31</span>
+                </div>
+                <div>
+                    <span>Data Science</span>
+                    <span>21</span>
+                </div>
+                <div>
+                    <span>Information Technology</span>
+                    <span>12</span>
+                </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We provide top-tier online education, offering flexible, expert-led courses across various fields <br> to
+            help you
+            achieve your academic and career goals.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100069645726909&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_raghav_189?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
+                <i class="fa fa-linkedin"></i>
+                <a href="https://x.com/RaghavD1809?t=k3sxaPUv-VsA9ZMVBy2qzA&s=09"><i class="fa fa-twitter"></i></a>
+            </div>
+        <p>Made Ragahv Dattawadkar</p>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>
+
+<!--  -->

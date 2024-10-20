@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="icon" href="images/logopage.jpg">
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="navlink" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <!-- Use for close icon -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="Programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <!-- Use for open icon -->
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course -->
+
+    <section class="course">
+        <h1>Course We Offer</h1>
+        <p>At our online education platform, we offer a diverse range of courses designed to meet the needs of learners
+            at every stage of their journey. From foundational subjects like mathematics and language arts to advanced
+            fields such as data science and artificial intelligence, our curriculum is crafted by industry experts to
+            ensure you gain practical, real-world skills. Whether you're looking to advance your career, switch fields,
+            or pursue a personal passion, our flexible, self-paced courses make it easy to learn at your own
+            convenience. Join us today and unlock your potential with the power of online education.</p>
+
+
+        <div class="row">
+            <div class="course-col">
+                <a href="diploma.html" style="text-decoration: none;">
+                <h3 style="color: black;">Diploma</h3>
+                <p>Our diploma courses offer foundational skills in programming, web development, and IT support,
+                    perfect for beginners entering the tech field.</p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="degree.html" style="text-decoration: none;">
+                <h3 style="color: black;">Degree</h3>
+                <p>Our degree programs provide in-depth knowledge in software engineering, cybersecurity, and data
+                    analytics, preparing you for advanced tech careers.</p>
+                </a>
+            </div>
+            <div class="course-col">
+                <a href="postgraduation.html" style="text-decoration: none;">
+                <h3 style="color: black;">Post Graduation</h3>
+                <p>Our post-graduation courses focus on cutting-edge fields like AI, machine learning, and blockchain,
+                    ideal for specialized, high-level expertise.
+                </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Our platform offers expert-led courses, interactive projects, and flexible learning for mastering computer
+            programming.</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World Class Library</h3>
+                <p>Access extensive digital resources anytime for research.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Playing Ground</h3>
+                <p>Enjoy virtual fitness classes and online sports tutorials.</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Tasty and Healthy Food</h3>
+                <p>Join our virtual cafeteria for cooking lessons and nutrition tips.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We provide top-tier online education, offering flexible, expert-led courses across various fields <br> to
+            help you
+            achieve your academic and career goals.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100069645726909&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_raghav_189?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
+                <i class="fa fa-linkedin"></i>
+                <a href="https://x.com/RaghavD1809?t=k3sxaPUv-VsA9ZMVBy2qzA&s=09"><i class="fa fa-twitter"></i></a>
+            </div>
+        <p>Made Ragahv Dattawadkar</p>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

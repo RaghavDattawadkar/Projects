@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logopage.jpg">
+
+
+
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="navlink" id="navLinks">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <!-- Use for close icon -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="course.html">Course</a></li>
+                    <li><a href="Programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+            <!-- Use for open icon -->
+        </nav>
+        <h1>About Us</h1>
+    </section>
+
+    <!-- About us -->
+
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                 <h1>World's Biggest University</h1>
+                 <p>Welcome to the world’s largest computer education website, where we offer an unparalleled range of
+                courses designed to empower you with cutting-edge skills. Whether you’re a beginner looking to learn the
+                basics or a seasoned professional aiming to specialize in advanced fields like artificial intelligence
+                and cybersecurity, our expertly crafted programs cater to all levels. Join millions of learners globally
+                who trust us to provide the highest quality education, flexible learning options, and support from
+                industry-leading instructors. Discover your potential and advance your career with our comprehensive,
+                innovative computer education platform.</p>
+                    <a href="" class="btn" id="redbtn">EXPLORE NOW</a>
+            </div>
+                 <div class="about-col">
+                     <img src="images/about.jpg" alt="">
+                 </div>
+         </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>We provide top-tier online education, offering flexible, expert-led courses across various fields <br> to
+            help you
+            achieve your academic and career goals.</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100069645726909&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/_raghav_189?igsh=OGQ5ZDc2ODk2ZA=="><i class="fa fa-instagram"></i></a>
+                <i class="fa fa-linkedin"></i>
+                <a href="https://x.com/RaghavD1809?t=k3sxaPUv-VsA9ZMVBy2qzA&s=09"><i class="fa fa-twitter"></i></a>
+            </div>
+        <p>Made Ragahv Dattawadkar</p>
+    </section>
+
+    <script>
+
+        var navLinks = document.getElementById('navLinks');
+
+        function showmenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hidemenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+</body>
+
+</html>

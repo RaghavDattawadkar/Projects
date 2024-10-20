@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
+
+	<script type="text/javascript">
+
+		var ListItems = [];
+		
+		function Add() {
+			var txt= document.getElementById('txtValue');
+			var txtErr =document.getElementById('txtValueError');
+			txt.className = "";
+			txtErr.innerHTML ="";
+			if (txt.value.trim().length ==0) {
+				txt.className = "bg-danger"; 
+				txtErr.innerHTML ="Value is mandetory."; 
+				return;
+			}
+
+			var regxNumber =/^[a-zA-Z]*$/;
+			if (regxNumber.test(txt.value) ==false) {
+				txtErr.innerHTML ="Only aplhabets allowed."; 
+				txt.className = "bg-warning"; 
+				return;
+			}
+
+
+			ListItems.push(txt.value.trim());
+			loadList();
+		}
+
+		function Remove() {
+			var txt= document.getElementById('txtValue');
+		
+			txt.className = "";
+
+			if (txt.value.trim().length ==0) {
+				txt.className = "bg-danger";
+				document.getElementById('txtValueError').innerHTML ="Value is mandetory."; 
+				return;
+			}
+		debugger;
+			if (ListItems.includes(txt.value)) {
+				var index= ListItems.indexOf(txt.value);
+				delete ListItems[index];
+			}
+			
+			loadList();
+		}
+		
+		
+
+		function loadList(){
+			debugger;
+			var oList = document.getElementById('olList');
+			var str = "";
+			for (var i = 0; i < ListItems.length; i++) 
+			{
+				console.log(ListItems[i]);
+				if (ListItems[i] != undefined) {
+
+						str =str+ `<li>${ListItems[i].trim()}</li>`;	
+				}
+			
+			}
+
+			oList.innerHTML = str;
+		}
+
+	</script>
+</head>
+<body>
+
+	
+	<input type="text" id="txtValue"><br>
+	<span id="txtValueError" class="text-danger"></span>
+	<br>
+	<button  onclick="Add()">Add to list</button>
+	<button  onclick="Remove()">Remove from list</button>
+
+
+	<p>
+		<ol id="olList">
+
+		</ol>
+	</p>
+
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Degree Registration Form</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/logopage.jpg">
+
+    <script>
+        function savedata() {
+            // Object Creation.
+            var name = document.getElementById('Name');
+            var errorname = document.getElementById('errorname');
+            var email = document.getElementById('Email');
+            var mobile = document.getElementById('MobileNo');
+            var errormobile = document.getElementById('errormob');
+
+
+            // Reset Design.
+            name.style.backgroundColor = "white";
+            email.style.backgroundColor = "white";
+            errorname.innerHTML = "";
+
+            // Form Validation Conditions
+            if (name.value.trim() == "") {
+                name.style.backgroundColor = "rgb(255, 215, 215)";
+                name.focus();
+                errorname.innerHTML = "Please Enter The Name";
+                errorname.style.color = "red";
+                return;
+            }
+
+            if (email.value.trim() == "") {
+                email.style.backgroundColor = "rgb(255, 215, 215)";
+                email.focus();
+                return;
+            }
+
+            if (mobile.length !==10)
+            {
+                mobile.style.backgroundColor = "rgb(255, 215, 215)";
+                mobile.focus();
+                return;
+            }
+
+            alert("Registration Successful");
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="Heading">
+                <h2>Registration Form</h2>
+            </div>
+            <form class="input-group">
+                <label class="form-label">Enter Name</label>
+                <input type="text" placeholder="Enter Your Name" id="Name" required>
+                <br>
+                <div id="errorname"></div>
+                <label class="form-label">Enter Email</label>
+                <input type="email" placeholder="Enter Your Email" id="Email" required>
+                <br>
+                <label class="form-label">Enter Mobile No</label>
+                <input type="number" placeholder="Enter Your Mobile" id="MobileNo" required>
+                <span id="errormob" style="color: red; display: none;">Please enter exactly 10 digits.</span>
+                <br>
+                <label class="form-label">Select Course</label>
+                <select name="" id="course">
+                    <option value="Languages">Languages</option>
+                    <option value="Networking">Networking</option>
+                    <option value="Database Management System">Database Management System</option>
+
+                </select>
+                <button type="submit" class="submit-btn" id="btn" onclick="savedata()">Register Now</button>
+                <a href="degree.html" style="text-decoration: none;"><button type="button" class="back-btn">Back</button></a>
+            </form>
+           
+        </div>
+    </div>
+</body>
+
+</html>
+
+
